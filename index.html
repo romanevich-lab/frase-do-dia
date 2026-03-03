@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frase do Dia</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+  }
+  .center { text-align: center; padding: 20px; }
+  .pt { font-size: 2.2rem; color: #111; margin-bottom: 20px; }
+  .en { font-size: 1.2rem; color: #888; }
+</style>
+</head>
+<body>
+<div class="center">
+  <div class="pt" id="pt"></div>
+  <div class="en" id="en"></div>
+</div>
+<script>
+const phrases = [
+  { pt: "Bom dia! Como você está?",    en: "Good morning! How are you?" },
+  { pt: "Eu não entendo.",             en: "I don't understand." },
+  { pt: "Onde fica o banheiro?",       en: "Where is the bathroom?" },
+  { pt: "Quanto custa isso?",          en: "How much does this cost?" },
+  { pt: "Eu gosto de música.",         en: "I like music." },
+  { pt: "Você fala inglês?",           en: "Do you speak English?" },
+  { pt: "Por favor, me ajude.",        en: "Please help me." },
+  { pt: "Qual é o seu nome?",          en: "What is your name?" },
+  { pt: "Eu moro no Brasil.",          en: "I live in Brazil." },
+  { pt: "A comida está deliciosa.",    en: "The food is delicious." },
+];
+const START = new Date('2025-01-01');
+const day = Math.floor((new Date() - START) / 86400000) % phrases.length;
+const p = phrases[day];
+document.getElementById('pt').textContent = p.pt;
+document.getElementById('en').textContent = p.en;
+</script>
+</body>
+</html>
