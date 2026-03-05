@@ -15,8 +15,27 @@ body {
   position: relative;
   z-index: 2;
 
-  /* поднять центральную фразу примерно на 10% высоты экрана */
+  /* поднять центральную фразу примерно на 10% */
   transform: translateY(-10vh);
+}
+
+/* ОВАЛЬНАЯ МАСКА: гарантирует чистую область вокруг текста */
+.center::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  /* Размеры маски (desktop) */
+  width: 72vw;
+  height: 28vh;
+
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 999px;
+
+  /* под текстом, но над "облаком" */
+  z-index: -1;
 }
 
 .pt {
@@ -93,8 +112,14 @@ body {
 .ghost.tiny  { font-size: 0.85rem; color: rgba(0,0,0,0.12); }
 
 @media (max-width: 768px) {
-  .ghost { max-width: 220px; font-size: 0.95rem; }
-
   /* на мобиле чуть меньше сдвиг */
   .center { transform: translateY(-7vh); }
+
+  /* маска под мобилу: шире, но ниже */
+  .center::before {
+    width: 92vw;
+    height: 24vh;
+  }
+
+  .ghost { max-width: 220px; font-size: 0.95rem; }
 }
