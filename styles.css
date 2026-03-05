@@ -1,23 +1,94 @@
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  background:#0b0f14;
-  color:#e7eefc;
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, serif;
 }
-.wrap{
-  max-width:860px;
-  margin:0 auto;
-  padding:48px 18px;
-  text-align:center;
+
+.center {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
 }
-.title{margin:0 0 8px;font-size:34px}
-.date{color:#a9b7d0;margin-bottom:18px;font-size:14px}
-.box{
-  background:#111824;
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:16px;
-  padding:26px 18px;
+
+.pt {
+  font-size: 2.2rem;
+  color: #111;
+  margin-bottom: 20px;
 }
-.pt{font-size:28px;line-height:1.25;margin:0 0 12px}
-.en{font-size:18px;line-height:1.35;color:#a9b7d0}
+
+.en {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* auth */
+.auth {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 3;
+}
+
+.user {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #444;
+}
+
+.user img { width: 26px; height: 26px; border-radius: 50%; }
+
+.user button {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* floating phrases (visible only after login) */
+.cloud {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  display: none;
+  z-index: 1;
+}
+
+.cloud.on { display: block; }
+
+.ghost {
+  position: absolute;
+  max-width: 320px;
+  font-family: Georgia, serif;
+  color: rgba(0,0,0,0.22);
+  line-height: 1.15;
+  font-size: 1.05rem;
+  filter: blur(0.2px);
+  user-select: none;
+  white-space: normal;
+
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.ghost:hover { color: rgba(0,0,0,0.32); }
+
+.ghost.small { font-size: 0.95rem; color: rgba(0,0,0,0.16); }
+.ghost.tiny  { font-size: 0.85rem; color: rgba(0,0,0,0.12); }
+
+@media (max-width: 768px) {
+  .ghost { max-width: 220px; font-size: 0.95rem; }
+}

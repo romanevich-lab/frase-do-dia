@@ -1,147 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frase do Dia</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frase do Dia</title>
 
-<script src="https://accounts.google.com/gsi/client" async defer></script>
+  <!-- Google Identity Services -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    min-height: 100vh;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Georgia, serif;
-  }
-  .center { text-align: center; padding: 20px; }
-  .pt { font-size: 2.2rem; color: #111; margin-bottom: 20px; }
-  .en { font-size: 1.2rem; color: #888; }
-
-  /* auth */
-  .auth {
-    position: fixed;
-    top: 14px;
-    right: 14px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .user {
-    display: none;
-    align-items: center;
-    gap: 10px;
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    font-size: 14px;
-    color: #444;
-  }
-  .user img { width: 26px; height: 26px; border-radius: 50%; }
-  .user button {
-    border: 1px solid #ddd;
-    background: #fff;
-    padding: 6px 10px;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-</style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<div class="auth">
-  <div id="g_id_onload"
-       data-client_id="658680788816-bfdmb26sdahn8v8lellt5l4rq2r0gbfj.apps.googleusercontent.com"
-       data-callback="handleCredentialResponse"
-       data-auto_prompt="false"></div>
+  <div class="auth">
+    <div id="g_id_onload"
+         data-client_id="658680788816-bfdmb26sdahn8v8lellt5l4rq2r0gbfj.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse"
+         data-auto_prompt="false"></div>
 
-  <div id="signin" class="g_id_signin"
-       data-type="standard"
-       data-theme="outline"
-       data-size="medium"
-       data-text="signin_with"
-       data-shape="rectangular"></div>
+    <div id="signin" class="g_id_signin"
+         data-type="standard"
+         data-theme="outline"
+         data-size="medium"
+         data-text="signin_with"
+         data-shape="rectangular"></div>
 
-  <div id="user" class="user">
-    <img id="avatar" alt="">
-    <span id="name"></span>
-    <button id="logout">Sair</button>
+    <div id="user" class="user">
+      <img id="avatar" alt="">
+      <span id="name"></span>
+      <button id="logout">Sair</button>
+    </div>
   </div>
-</div>
 
-<div class="center">
-  <div class="pt" id="pt"></div>
-  <div class="en" id="en"></div>
-</div>
+  <div class="cloud" id="cloud"></div>
 
-<script>
-const TIME_ZONE = "Europe/Lisbon";
-const START_DATE = "2026-03-04";
+  <div class="center">
+    <div class="pt" id="pt">A carregar…</div>
+    <div class="en" id="en"></div>
+  </div>
 
-function lisbonDayNumber() {
-  const parts = new Intl.DateTimeFormat("en-CA", {
-    timeZone: TIME_ZONE, year: "numeric", month: "2-digit", day: "2-digit",
-  }).formatToParts(new Date());
-
-  const y = Number(parts.find(p => p.type === "year").value);
-  const m = Number(parts.find(p => p.type === "month").value);
-  const d = Number(parts.find(p => p.type === "day").value);
-  return Math.floor(Date.UTC(y, m - 1, d) / 86400000);
-}
-function startDayNumber() {
-  const [y, m, d] = START_DATE.split("-").map(Number);
-  return Math.floor(Date.UTC(y, m - 1, d) / 86400000);
-}
-
-function showUser(u) {
-  document.getElementById("signin").style.display = "none";
-  const user = document.getElementById("user");
-  user.style.display = "flex";
-  document.getElementById("name").textContent = u.name || u.email || "User";
-  document.getElementById("avatar").src = u.picture || "";
-}
-function showSignin() {
-  document.getElementById("user").style.display = "none";
-  document.getElementById("signin").style.display = "block";
-}
-
-async function refreshMe() {
-  const r = await fetch("/api/me", { cache: "no-store" });
-  if (!r.ok) return showSignin();
-  const u = await r.json();
-  showUser(u);
-}
-
-window.handleCredentialResponse = async (resp) => {
-  const r = await fetch("/api/login", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ credential: resp.credential })
-  });
-  if (!r.ok) return showSignin();
-  await refreshMe();
-};
-
-document.getElementById("logout").addEventListener("click", async () => {
-  await fetch("/api/logout", { method: "POST" });
-  showSignin();
-});
-
-(async () => {
-  const res = await fetch("phrases.json", { cache: "no-store" });
-  const phrases = await res.json();
-  const idx = ((lisbonDayNumber() - startDayNumber()) % phrases.length + phrases.length) % phrases.length;
-  const p = phrases[idx];
-  document.getElementById('pt').textContent = p.pt || "";
-  document.getElementById('en').textContent = p.en || "";
-})().catch(e => {
-  document.getElementById('pt').textContent = "Erro ao carregar frases.";
-  document.getElementById('en').textContent = String(e);
-});
-
-// восстановить сессию если cookie уже есть
-refreshMe();
-</script>
+  <script src="app.js" defer></script>
 </body>
 </html>
