@@ -1,0 +1,1802 @@
+[
+  {
+    "id": 1,
+    "pt": "Já percebi; obrigado por explicares isso de forma simples.",
+    "en": "Got it; thanks for explaining that in a simple way.",
+    "focus": "já percebi"
+  },
+  {
+    "id": 2,
+    "pt": "Agora não posso; ligo-te mais tarde, quando estiver livre.",
+    "en": "I can't right now; I'll call you later, when I'm free.",
+    "focus": "agora não posso"
+  },
+  {
+    "id": 3,
+    "pt": "Diz-me isso outra vez, por favor, mas mais devagar.",
+    "en": "Tell me that again, please, but more slowly.",
+    "focus": "outra vez"
+  },
+  {
+    "id": 4,
+    "pt": "Estou a aprender português; todos os dias pratico um pouco.",
+    "en": "I'm learning Portuguese; every day I practice a bit.",
+    "focus": "todos os dias"
+  },
+  {
+    "id": 5,
+    "pt": "Se não der hoje, fazemos isso amanhã sem problema nenhum.",
+    "en": "If it doesn't work today, we'll do it tomorrow, no problem.",
+    "focus": "se não der"
+  },
+  {
+    "id": 6,
+    "pt": "Quero fazer isto bem, para não cometer erros.",
+    "en": "I want to do this well, so I don't make mistakes.",
+    "focus": "para não"
+  },
+  {
+    "id": 7,
+    "pt": "Vou fazer uma pausa, beber água, e continuar com calma.",
+    "en": "I'll take a break, drink water, and continue calmly.",
+    "focus": "com calma"
+  },
+  {
+    "id": 8,
+    "pt": "Tenho de ir agora; falamos depois com mais tempo.",
+    "en": "I have to go now; we'll talk later with more time.",
+    "focus": "falamos depois"
+  },
+  {
+    "id": 9,
+    "pt": "Podes enviar-me a morada certa, para eu chegar bem?",
+    "en": "Can you send me the right address so I arrive well?",
+    "focus": "podes enviar-me"
+  },
+  {
+    "id": 10,
+    "pt": "Não te preocupes; tudo vai ficar bem no fim.",
+    "en": "Don't worry; everything will be fine in the end.",
+    "focus": "não te preocupes"
+  },
+  {
+    "id": 11,
+    "pt": "Hoje é um bom dia para começar de novo.",
+    "en": "Today is a good day to start again.",
+    "focus": "começar de novo"
+  },
+  {
+    "id": 12,
+    "pt": "Se quiseres, podemos ver isso juntos mais tarde.",
+    "en": "If you want, we can look at that together later.",
+    "focus": "se quiseres"
+  },
+  {
+    "id": 13,
+    "pt": "Eu tento, mas às vezes não consigo sozinho.",
+    "en": "I try, but sometimes I can't do it alone.",
+    "focus": "às vezes"
+  },
+  {
+    "id": 14,
+    "pt": "Se tiveres dúvidas, pergunta-me e eu ajudo já.",
+    "en": "If you have doubts, ask me and I'll help right away.",
+    "focus": "se tiveres dúvidas"
+  },
+  {
+    "id": 15,
+    "pt": "Hoje está a chover; por isso vou com calma.",
+    "en": "It's raining today, so I'll go carefully.",
+    "focus": "por isso"
+  },
+  {
+    "id": 16,
+    "pt": "Hoje está frio; por isso fico em casa.",
+    "en": "It's cold today, so I'm staying home.",
+    "focus": "por isso"
+  },
+  {
+    "id": 17,
+    "pt": "Hoje está vento; por isso fico em casa.",
+    "en": "It's windy today, so I'm staying home.",
+    "focus": "por isso"
+  },
+  {
+    "id": 18,
+    "pt": "Hoje está nevoeiro; por isso vou com calma.",
+    "en": "It's foggy today, so I'll go carefully.",
+    "focus": "por isso"
+  },
+  {
+    "id": 19,
+    "pt": "Hoje tenho de pagar a conta, mas vou com calma.",
+    "en": "Today I have to pay the bill, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 20,
+    "pt": "Estou a treinar um pouco agora, sem pressa nenhuma.",
+    "en": "I'm practicing a little now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 21,
+    "pt": "Vale a pena fazer uma pergunta agora, ou esperamos um pouco?",
+    "en": "Is it worth asking a question now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 22,
+    "pt": "Antes de sair, preciso de fechar a porta com calma.",
+    "en": "Before I go out, I need to lock the door calmly.",
+    "focus": "preciso de"
+  },
+  {
+    "id": 23,
+    "pt": "Hoje vou ver a agenda e depois descansar um pouco.",
+    "en": "Today I'll check the schedule and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 24,
+    "pt": "Se tiver tempo, vou ler um artigo ainda hoje.",
+    "en": "If I have time, I'll read an article today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 25,
+    "pt": "Quando puderes, ajuda-me a fazer a compra, por favor.",
+    "en": "When you can, help me do the shopping, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 26,
+    "pt": "Hoje tenho de organizar a agenda, mas vou com calma.",
+    "en": "Today I have to organize the schedule, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 27,
+    "pt": "Estou a ver o documento agora, sem pressa nenhuma.",
+    "en": "I'm checking the document now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 28,
+    "pt": "Vale a pena ouvir a rádio agora, ou esperamos um pouco?",
+    "en": "Is it worth listening to the radio now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 29,
+    "pt": "Antes de sair, preciso de procurar a chave com calma.",
+    "en": "Before I go out, I need to look for the key calmly.",
+    "focus": "preciso de"
+  },
+  {
+    "id": 30,
+    "pt": "Hoje vou organizar as ideias e depois descansar um pouco.",
+    "en": "Today I'll organize my thoughts and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 31,
+    "pt": "Se tiver tempo, vou dar um passeio ainda hoje.",
+    "en": "If I have time, I'll take a walk today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 32,
+    "pt": "Quando puderes, ajuda-me a preparar o almoço, por favor.",
+    "en": "When you can, help me prepare lunch, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 33,
+    "pt": "Hoje tenho de responder ao e-mail, mas vou com calma.",
+    "en": "Today I have to reply to the email, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 34,
+    "pt": "Estou a praticar português agora, sem pressa nenhuma.",
+    "en": "I'm practicing Portuguese now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 35,
+    "pt": "Vale a pena ver o ficheiro agora, ou esperamos um pouco?",
+    "en": "Is it worth checking the file now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 36,
+    "pt": "Antes de sair, preciso de arrumar a mala com calma.",
+    "en": "Before I go out, I need to pack the bag calmly.",
+    "focus": "preciso de"
+  },
+  {
+    "id": 37,
+    "pt": "Hoje vou fazer uma lista e depois descansar um pouco.",
+    "en": "Today I'll make a list and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 38,
+    "pt": "Se tiver tempo, vou comprar pão ainda hoje.",
+    "en": "If I have time, I'll buy bread today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 39,
+    "pt": "Quando puderes, ajuda-me a terminar o relatório, por favor.",
+    "en": "When you can, help me finish the report, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 40,
+    "pt": "Hoje tenho de pedir ajuda, mas vou com calma.",
+    "en": "Today I have to ask for help, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 41,
+    "pt": "Estou a ver o ficheiro agora, sem pressa nenhuma.",
+    "en": "I'm checking the file now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 42,
+    "pt": "Vale a pena ler um livro agora, ou esperamos um pouco?",
+    "en": "Is it worth reading a book now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 43,
+    "pt": "Antes de sair, preciso de fazer uma lista com calma.",
+    "en": "Before I go out, I need to make a list calmly.",
+    "focus": "preciso de"
+  },
+  {
+    "id": 44,
+    "pt": "Hoje vou terminar o relatório e depois descansar um pouco.",
+    "en": "Today I'll finish the report and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 45,
+    "pt": "Se tiver tempo, vou limpar a cozinha ainda hoje.",
+    "en": "If I have time, I'll clean the kitchen today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 46,
+    "pt": "Quando puderes, ajuda-me a mandar uma mensagem, por favor.",
+    "en": "When you can, help me send a message, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 47,
+    "pt": "Hoje tenho de ver o documento, mas vou com calma.",
+    "en": "Today I have to check the document, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 48,
+    "pt": "Estou a ver um vídeo agora, sem pressa nenhuma.",
+    "en": "I'm watching a video now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 49,
+    "pt": "Vale a pena dormir mais cedo agora, ou esperamos um pouco?",
+    "en": "Is it worth going to sleep earlier now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 50,
+    "pt": "Antes de sair, preciso de confirmar a hora com calma.",
+    "en": "Before I go out, I need to confirm the time calmly.",
+    "focus": "preciso de"
+  },
+  {
+    "id": 51,
+    "pt": "Hoje vou arrumar a mala e depois descansar um pouco.",
+    "en": "Today I'll pack the bag and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 52,
+    "pt": "Se tiver tempo, vou escrever a mensagem ainda hoje.",
+    "en": "If I have time, I'll write the message today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 53,
+    "pt": "Quando puderes, ajuda-me a explicar isto melhor, por favor.",
+    "en": "When you can, help me explain this better, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 54,
+    "pt": "Hoje tenho de guardar o ficheiro, mas vou com calma.",
+    "en": "Today I have to save the file, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 55,
+    "pt": "Estou a organizar a secretária agora, sem pressa nenhuma.",
+    "en": "I'm organizing the desk now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 56,
+    "pt": "Vale a pena marcar a reunião agora, ou esperamos um pouco?",
+    "en": "Is it worth scheduling the meeting now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 57,
+    "pt": "Antes de sair, preciso de tomar notas com calma.",
+    "en": "Before I go out, I need to take notes calmly.",
+    "focus": "preciso de"
+  },
+  {
+    "id": 58,
+    "pt": "Hoje vou ouvir música e depois descansar um pouco.",
+    "en": "Today I'll listen to music and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 59,
+    "pt": "Se tiver tempo, vou chegar bem ainda hoje.",
+    "en": "If I have time, I'll arrive safely today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 60,
+    "pt": "Quando puderes, ajuda-me a resolver o problema, por favor.",
+    "en": "When you can, help me solve the problem, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 61,
+    "pt": "Hoje tenho de escrever o e-mail, mas vou com calma.",
+    "en": "Today I have to write the email, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 62,
+    "pt": "Estou a tomar notas agora, sem pressa nenhuma.",
+    "en": "I'm taking notes now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 63,
+    "pt": "Vale a pena organizar a secretária agora, ou esperamos um pouco?",
+    "en": "Is it worth organizing the desk now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 64,
+    "pt": "Antes de sair, preciso de confirmar a morada com calma.",
+    "en": "Before I go out, I need to confirm the address calmly.",
+    "focus": "preciso de"
+  },
+  {
+    "id": 65,
+    "pt": "Hoje vou rever a lição e depois descansar um pouco.",
+    "en": "Today I'll review the lesson and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 66,
+    "pt": "Se tiver tempo, vou estudar português ainda hoje.",
+    "en": "If I have time, I'll study Portuguese today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 67,
+    "pt": "Quando puderes, ajuda-me a ver o ficheiro, por favor.",
+    "en": "When you can, help me check the file, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 68,
+    "pt": "Hoje tenho de confirmar a hora, mas vou com calma.",
+    "en": "Today I have to confirm the time, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 69,
+    "pt": "Estou a estudar português agora, sem pressa nenhuma.",
+    "en": "I'm studying Portuguese now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 70,
+    "pt": "Vale a pena fazer uma lista agora, ou esperamos um pouco?",
+    "en": "Is it worth making a list now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 71,
+    "pt": "Antes de sair, preciso de mandar uma mensagem com calma.",
+    "en": "Before I go out, I need to send a message calmly.",
+    "focus": "preciso de"
+  },
+  {
+    "id": 72,
+    "pt": "Hoje vou ver um filme e depois descansar um pouco.",
+    "en": "Today I'll watch a movie and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 73,
+    "pt": "Se tiver tempo, vou ouvir a rádio ainda hoje.",
+    "en": "If I have time, I'll listen to the radio today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 74,
+    "pt": "Quando puderes, ajuda-me a organizar a agenda, por favor.",
+    "en": "When you can, help me organize the schedule, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 75,
+    "pt": "Hoje tenho de escrever a mensagem, mas vou com calma.",
+    "en": "Today I have to write the message, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 76,
+    "pt": "Estou a ouvir música agora, sem pressa nenhuma.",
+    "en": "I'm listening to music now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 77,
+    "pt": "Vale a pena mandar uma mensagem agora, ou esperamos um pouco?",
+    "en": "Is it worth sending a message now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 78,
+    "pt": "Antes de sair, preciso de ver a agenda com calma.",
+    "en": "Before I go out, I need to check the schedule calmly.",
+    "focus": "preciso de"
+  },
+  {
+    "id": 79,
+    "pt": "Hoje vou mandar uma mensagem e depois descansar um pouco.",
+    "en": "Today I'll send a message and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 80,
+    "pt": "Se tiver tempo, vou pensar nisso ainda hoje.",
+    "en": "If I have time, I'll think about it today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 81,
+    "pt": "Quando puderes, ajuda-me a dar um exemplo, por favor.",
+    "en": "When you can, help me give an example, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 82,
+    "pt": "Hoje tenho de marcar a reunião, mas vou com calma.",
+    "en": "Today I have to schedule the meeting, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 83,
+    "pt": "Estou a ouvir a rádio agora, sem pressa nenhuma.",
+    "en": "I'm listening to the radio now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 84,
+    "pt": "Vale a pena ouvir música agora, ou esperamos um pouco?",
+    "en": "Is it worth listening to music now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 85,
+    "pt": "Antes de sair, preciso de carregar o telefone com calma.",
+    "en": "Before I go out, I need to charge the phone calmly.",
+    "focus": "preciso de"
+  },
+  {
+    "id": 86,
+    "pt": "Hoje vou seguir em frente e depois descansar um pouco.",
+    "en": "Today I'll move forward and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 87,
+    "pt": "Se tiver tempo, vou ver um vídeo ainda hoje.",
+    "en": "If I have time, I'll watch a video today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 88,
+    "pt": "Quando puderes, ajuda-me a fazer uma lista, por favor.",
+    "en": "When you can, help me make a list, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 89,
+    "pt": "Hoje tenho de limpar a cozinha, mas vou com calma.",
+    "en": "Today I have to clean the kitchen, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 90,
+    "pt": "Estou a terminar o relatório agora, sem pressa nenhuma.",
+    "en": "I'm finishing the report now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 91,
+    "pt": "Vale a pena estudar português agora, ou esperamos um pouco?",
+    "en": "Is it worth studying Portuguese now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 92,
+    "pt": "Antes de sair, preciso de ver o caminho com calma.",
+    "en": "Before I go out, I need to check the route calmly.",
+    "focus": "preciso de"
+  },
+  {
+    "id": 93,
+    "pt": "Hoje vou preparar o almoço e depois descansar um pouco.",
+    "en": "Today I'll prepare lunch and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 94,
+    "pt": "Se tiver tempo, vou organizar a secretária ainda hoje.",
+    "en": "If I have time, I'll organize the desk today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 95,
+    "pt": "Quando puderes, ajuda-me a ver o documento, por favor.",
+    "en": "When you can, help me check the document, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 96,
+    "pt": "Hoje tenho de terminar o relatório, mas vou com calma.",
+    "en": "Today I have to finish the report, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 97,
+    "pt": "Estou a ver um filme agora, sem pressa nenhuma.",
+    "en": "I'm watching a movie now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 98,
+    "pt": "Vale a pena arrumar a mala agora, ou esperamos um pouco?",
+    "en": "Is it worth packing the bag now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 99,
+    "pt": "Hoje vou enviar o ficheiro e depois descansar um pouco.",
+    "en": "Today I'll send the file and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 100,
+    "pt": "Se tiver tempo, vou manter a calma ainda hoje.",
+    "en": "If I have time, I'll stay calm today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 101,
+    "pt": "Quando puderes, ajuda-me a rever a lição, por favor.",
+    "en": "When you can, help me review the lesson, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 102,
+    "pt": "Hoje tenho de tratar do pedido, mas vou com calma.",
+    "en": "Today I have to handle the request, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 103,
+    "pt": "Estou a ler um artigo agora, sem pressa nenhuma.",
+    "en": "I'm reading an article now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 104,
+    "pt": "Vale a pena fechar a porta agora, ou esperamos um pouco?",
+    "en": "Is it worth locking the door now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 105,
+    "pt": "Hoje vou ver o ficheiro e depois descansar um pouco.",
+    "en": "Today I'll check the file and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 106,
+    "pt": "Se tiver tempo, vou enviar o e-mail ainda hoje.",
+    "en": "If I have time, I'll send the email today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 107,
+    "pt": "Quando puderes, ajuda-me a marcar a reunião, por favor.",
+    "en": "When you can, help me schedule the meeting, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 108,
+    "pt": "Hoje tenho de enviar o ficheiro, mas vou com calma.",
+    "en": "Today I have to send the file, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 109,
+    "pt": "Estou a escrever o e-mail agora, sem pressa nenhuma.",
+    "en": "I'm writing the email now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 110,
+    "pt": "Vale a pena voltar a isto agora, ou esperamos um pouco?",
+    "en": "Is it worth coming back to this now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 111,
+    "pt": "Hoje vou fazer uma pausa e depois descansar um pouco.",
+    "en": "Today I'll take a break and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 112,
+    "pt": "Se tiver tempo, vou marcar a reunião ainda hoje.",
+    "en": "If I have time, I'll schedule the meeting today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 113,
+    "pt": "Quando puderes, ajuda-me a preparar o jantar, por favor.",
+    "en": "When you can, help me prepare dinner, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 114,
+    "pt": "Hoje tenho de enviar o e-mail, mas vou com calma.",
+    "en": "Today I have to send the email, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 115,
+    "pt": "Estou a fazer uma lista agora, sem pressa nenhuma.",
+    "en": "I'm making a list now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 116,
+    "pt": "Vale a pena respirar fundo agora, ou esperamos um pouco?",
+    "en": "Is it worth taking a deep breath now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 117,
+    "pt": "Hoje vou organizar a secretária e depois descansar um pouco.",
+    "en": "Today I'll organize the desk and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 118,
+    "pt": "Se tiver tempo, vou ver uma série ainda hoje.",
+    "en": "If I have time, I'll watch a series today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 119,
+    "pt": "Quando puderes, ajuda-me a tratar do pedido, por favor.",
+    "en": "When you can, help me handle the request, please.",
+    "focus": "por favor"
+  },
+  {
+    "id": 120,
+    "pt": "Hoje tenho de resolver o problema, mas vou com calma.",
+    "en": "Today I have to solve the problem, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 121,
+    "pt": "Estou a escrever a mensagem agora, sem pressa nenhuma.",
+    "en": "I'm writing the message now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 122,
+    "pt": "Vale a pena começar de novo agora, ou esperamos um pouco?",
+    "en": "Is it worth starting again now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 123,
+    "pt": "Hoje vou beber água e depois descansar um pouco.",
+    "en": "Today I'll drink water and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 124,
+    "pt": "Se tiver tempo, vou fazer uma caminhada ainda hoje.",
+    "en": "If I have time, I'll go for a walk today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 125,
+    "pt": "Hoje tenho de comprar pão, mas vou com calma.",
+    "en": "Today I have to buy bread, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 126,
+    "pt": "Estou a arrumar a casa agora, sem pressa nenhuma.",
+    "en": "I'm tidying the house now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 127,
+    "pt": "Vale a pena ver uma série agora, ou esperamos um pouco?",
+    "en": "Is it worth watching a series now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 128,
+    "pt": "Hoje vou arrumar a casa e depois descansar um pouco.",
+    "en": "Today I'll tidy the house and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 129,
+    "pt": "Se tiver tempo, vou dormir mais cedo ainda hoje.",
+    "en": "If I have time, I'll go to sleep earlier today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 130,
+    "pt": "Hoje tenho de fazer a compra, mas vou com calma.",
+    "en": "Today I have to do the shopping, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 131,
+    "pt": "Estou a limpar a cozinha agora, sem pressa nenhuma.",
+    "en": "I'm cleaning the kitchen now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 132,
+    "pt": "Vale a pena ver o documento agora, ou esperamos um pouco?",
+    "en": "Is it worth checking the document now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 133,
+    "pt": "Hoje vou resolver o problema e depois descansar um pouco.",
+    "en": "Today I'll solve the problem and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 134,
+    "pt": "Se tiver tempo, vou resolver o problema ainda hoje.",
+    "en": "If I have time, I'll solve the problem today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 135,
+    "pt": "Hoje tenho de rever a lição, mas vou com calma.",
+    "en": "Today I have to review the lesson, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 136,
+    "pt": "Estou a ver uma série agora, sem pressa nenhuma.",
+    "en": "I'm watching a series now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 137,
+    "pt": "Vale a pena terminar o relatório agora, ou esperamos um pouco?",
+    "en": "Is it worth finishing the report now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 138,
+    "pt": "Hoje vou ver um vídeo e depois descansar um pouco.",
+    "en": "Today I'll watch a video and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 139,
+    "pt": "Se tiver tempo, vou começar de novo ainda hoje.",
+    "en": "If I have time, I'll start again today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 140,
+    "pt": "Hoje tenho de fazer uma lista, mas vou com calma.",
+    "en": "Today I have to make a list, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 141,
+    "pt": "Estou a organizar a agenda agora, sem pressa nenhuma.",
+    "en": "I'm organizing the schedule now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 142,
+    "pt": "Vale a pena chegar bem agora, ou esperamos um pouco?",
+    "en": "Is it worth arriving safely now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 143,
+    "pt": "Hoje vou manter a calma e depois descansar um pouco.",
+    "en": "Today I'll stay calm and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 144,
+    "pt": "Se tiver tempo, vou treinar um pouco ainda hoje.",
+    "en": "If I have time, I'll practice a little today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 145,
+    "pt": "Hoje tenho de arrumar a mala, mas vou com calma.",
+    "en": "Today I have to pack the bag, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 146,
+    "pt": "Estou a respirar fundo agora, sem pressa nenhuma.",
+    "en": "I'm taking a deep breath now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 147,
+    "pt": "Vale a pena fazer uma caminhada agora, ou esperamos um pouco?",
+    "en": "Is it worth going for a walk now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 148,
+    "pt": "Hoje vou não perder tempo e depois descansar um pouco.",
+    "en": "Today I'll not waste time and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 149,
+    "pt": "Se tiver tempo, vou arrumar a mala ainda hoje.",
+    "en": "If I have time, I'll pack the bag today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 150,
+    "pt": "Hoje tenho de ver o caminho, mas vou com calma.",
+    "en": "Today I have to check the route, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 151,
+    "pt": "Estou a tratar do pedido agora, sem pressa nenhuma.",
+    "en": "I'm handling the request now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 152,
+    "pt": "Vale a pena resolver o problema agora, ou esperamos um pouco?",
+    "en": "Is it worth solving the problem now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 153,
+    "pt": "Hoje vou preparar o jantar e depois descansar um pouco.",
+    "en": "Today I'll prepare dinner and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 154,
+    "pt": "Se tiver tempo, vou procurar a chave ainda hoje.",
+    "en": "If I have time, I'll look for the key today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 155,
+    "pt": "Hoje tenho de comprar fruta, mas vou com calma.",
+    "en": "Today I have to buy fruit, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 156,
+    "pt": "Estou a ler um livro agora, sem pressa nenhuma.",
+    "en": "I'm reading a book now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 157,
+    "pt": "Vale a pena descansar um pouco agora, ou esperamos um pouco?",
+    "en": "Is it worth resting a bit now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 158,
+    "pt": "Hoje vou passar por aí e depois descansar um pouco.",
+    "en": "Today I'll drop by there and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 159,
+    "pt": "Se tiver tempo, vou preparar o jantar ainda hoje.",
+    "en": "If I have time, I'll prepare dinner today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 160,
+    "pt": "Hoje tenho de carregar o telefone, mas vou com calma.",
+    "en": "Today I have to charge the phone, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 161,
+    "pt": "Estou a resolver o problema agora, sem pressa nenhuma.",
+    "en": "I'm solving the problem now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 162,
+    "pt": "Vale a pena manter a calma agora, ou esperamos um pouco?",
+    "en": "Is it worth staying calm now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 163,
+    "pt": "Hoje vou comprar água e depois descansar um pouco.",
+    "en": "Today I'll buy water and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 164,
+    "pt": "Se tiver tempo, vou responder à mensagem ainda hoje.",
+    "en": "If I have time, I'll reply to the message today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 165,
+    "pt": "Hoje tenho de comprar água, mas vou com calma.",
+    "en": "Today I have to buy water, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 166,
+    "pt": "Estou a rever a lição agora, sem pressa nenhuma.",
+    "en": "I'm reviewing the lesson now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 167,
+    "pt": "Vale a pena preparar o almoço agora, ou esperamos um pouco?",
+    "en": "Is it worth preparing lunch now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 168,
+    "pt": "Hoje vou descansar um pouco e depois descansar um pouco.",
+    "en": "Today I'll rest a bit and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 169,
+    "pt": "Se tiver tempo, vou fazer a compra ainda hoje.",
+    "en": "If I have time, I'll do the shopping today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 170,
+    "pt": "Hoje tenho de fechar a porta, mas vou com calma.",
+    "en": "Today I have to lock the door, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 171,
+    "pt": "Estou a organizar as ideias agora, sem pressa nenhuma.",
+    "en": "I'm organizing my thoughts now, with no rush at all.",
+    "focus": "estou a"
+  },
+  {
+    "id": 172,
+    "pt": "Vale a pena ver um vídeo agora, ou esperamos um pouco?",
+    "en": "Is it worth watching a video now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 173,
+    "pt": "Hoje vou respirar fundo e depois descansar um pouco.",
+    "en": "Today I'll take a deep breath and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 174,
+    "pt": "Se tiver tempo, vou passar por aí ainda hoje.",
+    "en": "If I have time, I'll drop by there today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 175,
+    "pt": "Hoje tenho de tomar notas, mas vou com calma.",
+    "en": "Today I have to take notes, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 176,
+    "pt": "Vale a pena enviar o ficheiro agora, ou esperamos um pouco?",
+    "en": "Is it worth sending the file now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 177,
+    "pt": "Hoje vou enviar o e-mail e depois descansar um pouco.",
+    "en": "Today I'll send the email and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 178,
+    "pt": "Se tiver tempo, vou organizar a agenda ainda hoje.",
+    "en": "If I have time, I'll organize the schedule today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 179,
+    "pt": "Hoje tenho de procurar a chave, mas vou com calma.",
+    "en": "Today I have to look for the key, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 180,
+    "pt": "Vale a pena arrumar a casa agora, ou esperamos um pouco?",
+    "en": "Is it worth tidying the house now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 181,
+    "pt": "Hoje vou dizer olá e depois descansar um pouco.",
+    "en": "Today I'll say hi and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 182,
+    "pt": "Se tiver tempo, vou ver um filme ainda hoje.",
+    "en": "If I have time, I'll watch a movie today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 183,
+    "pt": "Hoje tenho de ver o ficheiro, mas vou com calma.",
+    "en": "Today I have to check the file, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 184,
+    "pt": "Vale a pena pensar nisso agora, ou esperamos um pouco?",
+    "en": "Is it worth thinking about it now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 185,
+    "pt": "Hoje vou confirmar a morada e depois descansar um pouco.",
+    "en": "Today I'll confirm the address and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 186,
+    "pt": "Se tiver tempo, vou ler um livro ainda hoje.",
+    "en": "If I have time, I'll read a book today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 187,
+    "pt": "Hoje tenho de confirmar a morada, mas vou com calma.",
+    "en": "Today I have to confirm the address, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 188,
+    "pt": "Vale a pena ver isso juntos agora, ou esperamos um pouco?",
+    "en": "Is it worth looking at that together now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 189,
+    "pt": "Hoje vou responder ao e-mail e depois descansar um pouco.",
+    "en": "Today I'll reply to the email and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 190,
+    "pt": "Se tiver tempo, vou confirmar a hora ainda hoje.",
+    "en": "If I have time, I'll confirm the time today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 191,
+    "pt": "Hoje tenho de ver a agenda, mas vou com calma.",
+    "en": "Today I have to check the schedule, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 192,
+    "pt": "Vale a pena carregar o telefone agora, ou esperamos um pouco?",
+    "en": "Is it worth charging the phone now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 193,
+    "pt": "Hoje vou ver o documento e depois descansar um pouco.",
+    "en": "Today I'll check the document and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 194,
+    "pt": "Se tiver tempo, vou dizer olá ainda hoje.",
+    "en": "If I have time, I'll say hi today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 195,
+    "pt": "Hoje tenho de responder à mensagem, mas vou com calma.",
+    "en": "Today I have to reply to the message, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 196,
+    "pt": "Vale a pena mexer o corpo agora, ou esperamos um pouco?",
+    "en": "Is it worth moving your body now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 197,
+    "pt": "Hoje vou pagar a conta e depois descansar um pouco.",
+    "en": "Today I'll pay the bill and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 198,
+    "pt": "Se tiver tempo, vou ver o documento ainda hoje.",
+    "en": "If I have time, I'll check the document today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 199,
+    "pt": "Hoje tenho de arrumar a casa, mas vou com calma.",
+    "en": "Today I have to tidy the house, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 200,
+    "pt": "Vale a pena confirmar a morada agora, ou esperamos um pouco?",
+    "en": "Is it worth confirming the address now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 201,
+    "pt": "Hoje vou dar um exemplo e depois descansar um pouco.",
+    "en": "Today I'll give an example and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 202,
+    "pt": "Se tiver tempo, vou fechar a porta ainda hoje.",
+    "en": "If I have time, I'll lock the door today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 203,
+    "pt": "Hoje tenho de enviar o documento, mas vou com calma.",
+    "en": "Today I have to send the document, but I'll take it calmly.",
+    "focus": "tenho de"
+  },
+  {
+    "id": 204,
+    "pt": "Vale a pena explicar isto melhor agora, ou esperamos um pouco?",
+    "en": "Is it worth explaining this better now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 205,
+    "pt": "Hoje vou mexer o corpo e depois descansar um pouco.",
+    "en": "Today I'll move your body and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 206,
+    "pt": "Se tiver tempo, vou fazer isto bem ainda hoje.",
+    "en": "If I have time, I'll do this well today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 207,
+    "pt": "Vale a pena comprar água agora, ou esperamos um pouco?",
+    "en": "Is it worth buying water now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 208,
+    "pt": "Hoje vou estudar português e depois descansar um pouco.",
+    "en": "Today I'll study Portuguese and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 209,
+    "pt": "Se tiver tempo, vou explicar isto melhor ainda hoje.",
+    "en": "If I have time, I'll explain this better today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 210,
+    "pt": "Vale a pena responder à mensagem agora, ou esperamos um pouco?",
+    "en": "Is it worth replying to the message now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 211,
+    "pt": "Hoje vou ler um artigo e depois descansar um pouco.",
+    "en": "Today I'll read an article and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 212,
+    "pt": "Se tiver tempo, vou fazer um café ainda hoje.",
+    "en": "If I have time, I'll make a coffee today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 213,
+    "pt": "Vale a pena rever a lição agora, ou esperamos um pouco?",
+    "en": "Is it worth reviewing the lesson now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 214,
+    "pt": "Hoje vou acordar cedo e depois descansar um pouco.",
+    "en": "Today I'll wake up early and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 215,
+    "pt": "Se tiver tempo, vou pagar a conta ainda hoje.",
+    "en": "If I have time, I'll pay the bill today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 216,
+    "pt": "Vale a pena fazer a compra agora, ou esperamos um pouco?",
+    "en": "Is it worth doing the shopping now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 217,
+    "pt": "Hoje vou comprar pão e depois descansar um pouco.",
+    "en": "Today I'll buy bread and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 218,
+    "pt": "Se tiver tempo, vou beber água ainda hoje.",
+    "en": "If I have time, I'll drink water today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 219,
+    "pt": "Vale a pena pagar a conta agora, ou esperamos um pouco?",
+    "en": "Is it worth paying the bill now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 220,
+    "pt": "Hoje vou organizar a agenda e depois descansar um pouco.",
+    "en": "Today I'll organize the schedule and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 221,
+    "pt": "Se tiver tempo, vou fazer uma lista ainda hoje.",
+    "en": "If I have time, I'll make a list today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 222,
+    "pt": "Vale a pena responder ao e-mail agora, ou esperamos um pouco?",
+    "en": "Is it worth replying to the email now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 223,
+    "pt": "Hoje vou fazer a compra e depois descansar um pouco.",
+    "en": "Today I'll do the shopping and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 224,
+    "pt": "Se tiver tempo, vou tomar notas ainda hoje.",
+    "en": "If I have time, I'll take notes today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 225,
+    "pt": "Vale a pena fazer uma pausa agora, ou esperamos um pouco?",
+    "en": "Is it worth taking a break now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 226,
+    "pt": "Hoje vou dormir mais cedo e depois descansar um pouco.",
+    "en": "Today I'll go to sleep earlier and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 227,
+    "pt": "Se tiver tempo, vou fazer uma pausa ainda hoje.",
+    "en": "If I have time, I'll take a break today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 228,
+    "pt": "Vale a pena dar um exemplo agora, ou esperamos um pouco?",
+    "en": "Is it worth giving an example now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 229,
+    "pt": "Hoje vou começar de novo e depois descansar um pouco.",
+    "en": "Today I'll start again and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 230,
+    "pt": "Se tiver tempo, vou ver o ficheiro ainda hoje.",
+    "en": "If I have time, I'll check the file today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 231,
+    "pt": "Vale a pena enviar o e-mail agora, ou esperamos um pouco?",
+    "en": "Is it worth sending the email now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 232,
+    "pt": "Hoje vou não complicar isto e depois descansar um pouco.",
+    "en": "Today I'll not complicate this and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 233,
+    "pt": "Se tiver tempo, vou acordar cedo ainda hoje.",
+    "en": "If I have time, I'll wake up early today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 234,
+    "pt": "Vale a pena não perder tempo agora, ou esperamos um pouco?",
+    "en": "Is it worth not wasting time now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 235,
+    "pt": "Hoje vou ver o caminho e depois descansar um pouco.",
+    "en": "Today I'll check the route and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 236,
+    "pt": "Se tiver tempo, vou parar um minuto ainda hoje.",
+    "en": "If I have time, I'll stop for a minute today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 237,
+    "pt": "Vale a pena procurar a chave agora, ou esperamos um pouco?",
+    "en": "Is it worth looking for the key now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 238,
+    "pt": "Hoje vou escrever o e-mail e depois descansar um pouco.",
+    "en": "Today I'll write the email and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 239,
+    "pt": "Se tiver tempo, vou mandar uma mensagem ainda hoje.",
+    "en": "If I have time, I'll send a message today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 240,
+    "pt": "Vale a pena parar um minuto agora, ou esperamos um pouco?",
+    "en": "Is it worth stopping for a minute now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 241,
+    "pt": "Hoje vou ver uma série e depois descansar um pouco.",
+    "en": "Today I'll watch a series and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 242,
+    "pt": "Se tiver tempo, vou responder ao e-mail ainda hoje.",
+    "en": "If I have time, I'll reply to the email today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 243,
+    "pt": "Vale a pena confirmar a hora agora, ou esperamos um pouco?",
+    "en": "Is it worth confirming the time now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 244,
+    "pt": "Hoje vou procurar a chave e depois descansar um pouco.",
+    "en": "Today I'll look for the key and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 245,
+    "pt": "Se tiver tempo, vou mexer o corpo ainda hoje.",
+    "en": "If I have time, I'll move your body today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 246,
+    "pt": "Vale a pena ver o caminho agora, ou esperamos um pouco?",
+    "en": "Is it worth checking the route now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 247,
+    "pt": "Hoje vou responder à mensagem e depois descansar um pouco.",
+    "en": "Today I'll reply to the message and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 248,
+    "pt": "Se tiver tempo, vou escrever o e-mail ainda hoje.",
+    "en": "If I have time, I'll write the email today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 249,
+    "pt": "Vale a pena ler um artigo agora, ou esperamos um pouco?",
+    "en": "Is it worth reading an article now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 250,
+    "pt": "Hoje vou pensar nisso e depois descansar um pouco.",
+    "en": "Today I'll think about it and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 251,
+    "pt": "Se tiver tempo, vou enviar o ficheiro ainda hoje.",
+    "en": "If I have time, I'll send the file today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 252,
+    "pt": "Vale a pena dar um passeio agora, ou esperamos um pouco?",
+    "en": "Is it worth taking a walk now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 253,
+    "pt": "Hoje vou parar um minuto e depois descansar um pouco.",
+    "en": "Today I'll stop for a minute and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 254,
+    "pt": "Se tiver tempo, vou não complicar isto ainda hoje.",
+    "en": "If I have time, I'll not complicate this today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 255,
+    "pt": "Vale a pena ver a agenda agora, ou esperamos um pouco?",
+    "en": "Is it worth checking the schedule now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 256,
+    "pt": "Hoje vou voltar a isto e depois descansar um pouco.",
+    "en": "Today I'll come back to this and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 257,
+    "pt": "Se tiver tempo, vou ver a agenda ainda hoje.",
+    "en": "If I have time, I'll check the schedule today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 258,
+    "pt": "Vale a pena pedir ajuda agora, ou esperamos um pouco?",
+    "en": "Is it worth asking for help now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 259,
+    "pt": "Hoje vou ler um livro e depois descansar um pouco.",
+    "en": "Today I'll read a book and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 260,
+    "pt": "Se tiver tempo, vou descansar um pouco ainda hoje.",
+    "en": "If I have time, I'll rest a bit today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 261,
+    "pt": "Vale a pena passar por aí agora, ou esperamos um pouco?",
+    "en": "Is it worth dropping by there now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 262,
+    "pt": "Hoje vou treinar um pouco e depois descansar um pouco.",
+    "en": "Today I'll practice a little and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 263,
+    "pt": "Se tiver tempo, vou voltar a isto ainda hoje.",
+    "en": "If I have time, I'll come back to this today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 264,
+    "pt": "Vale a pena tomar notas agora, ou esperamos um pouco?",
+    "en": "Is it worth taking notes now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 265,
+    "pt": "Hoje vou fazer uma caminhada e depois descansar um pouco.",
+    "en": "Today I'll go for a walk and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 266,
+    "pt": "Se tiver tempo, vou enviar o documento ainda hoje.",
+    "en": "If I have time, I'll send the document today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 267,
+    "pt": "Vale a pena praticar português agora, ou esperamos um pouco?",
+    "en": "Is it worth practicing Portuguese now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 268,
+    "pt": "Hoje vou dar um passeio e depois descansar um pouco.",
+    "en": "Today I'll take a walk and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 269,
+    "pt": "Se tiver tempo, vou seguir em frente ainda hoje.",
+    "en": "If I have time, I'll move forward today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 270,
+    "pt": "Vale a pena comprar fruta agora, ou esperamos um pouco?",
+    "en": "Is it worth buying fruit now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 271,
+    "pt": "Hoje vou ouvir a rádio e depois descansar um pouco.",
+    "en": "Today I'll listen to the radio and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 272,
+    "pt": "Se tiver tempo, vou carregar o telefone ainda hoje.",
+    "en": "If I have time, I'll charge the phone today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 273,
+    "pt": "Vale a pena tratar do pedido agora, ou esperamos um pouco?",
+    "en": "Is it worth handling the request now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 274,
+    "pt": "Hoje vou fazer um café e depois descansar um pouco.",
+    "en": "Today I'll make a coffee and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 275,
+    "pt": "Se tiver tempo, vou preparar o almoço ainda hoje.",
+    "en": "If I have time, I'll prepare lunch today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 276,
+    "pt": "Vale a pena limpar a cozinha agora, ou esperamos um pouco?",
+    "en": "Is it worth cleaning the kitchen now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 277,
+    "pt": "Hoje vou fazer isto bem e depois descansar um pouco.",
+    "en": "Today I'll do this well and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 278,
+    "pt": "Se tiver tempo, vou guardar o ficheiro ainda hoje.",
+    "en": "If I have time, I'll save the file today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 279,
+    "pt": "Vale a pena ver um filme agora, ou esperamos um pouco?",
+    "en": "Is it worth watching a movie now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 280,
+    "pt": "Hoje vou praticar português e depois descansar um pouco.",
+    "en": "Today I'll practice Portuguese and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 281,
+    "pt": "Se tiver tempo, vou comprar água ainda hoje.",
+    "en": "If I have time, I'll buy water today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 282,
+    "pt": "Vale a pena preparar o jantar agora, ou esperamos um pouco?",
+    "en": "Is it worth preparing dinner now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 283,
+    "pt": "Hoje vou chegar bem e depois descansar um pouco.",
+    "en": "Today I'll arrive safely and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 284,
+    "pt": "Se tiver tempo, vou rever a lição ainda hoje.",
+    "en": "If I have time, I'll review the lesson today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 285,
+    "pt": "Vale a pena escrever o e-mail agora, ou esperamos um pouco?",
+    "en": "Is it worth writing the email now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 286,
+    "pt": "Hoje vou guardar o ficheiro e depois descansar um pouco.",
+    "en": "Today I'll save the file and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 287,
+    "pt": "Se tiver tempo, vou ver isso juntos ainda hoje.",
+    "en": "If I have time, I'll look at that together today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 288,
+    "pt": "Vale a pena treinar um pouco agora, ou esperamos um pouco?",
+    "en": "Is it worth practicing a little now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 289,
+    "pt": "Hoje vou limpar a cozinha e depois descansar um pouco.",
+    "en": "Today I'll clean the kitchen and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 290,
+    "pt": "Se tiver tempo, vou organizar as ideias ainda hoje.",
+    "en": "If I have time, I'll organize my thoughts today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 291,
+    "pt": "Vale a pena fazer um café agora, ou esperamos um pouco?",
+    "en": "Is it worth making a coffee now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 292,
+    "pt": "Hoje vou sair cedo e depois descansar um pouco.",
+    "en": "Today I'll leave early and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 293,
+    "pt": "Se tiver tempo, vou arrumar a casa ainda hoje.",
+    "en": "If I have time, I'll tidy the house today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 294,
+    "pt": "Vale a pena enviar o documento agora, ou esperamos um pouco?",
+    "en": "Is it worth sending the document now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 295,
+    "pt": "Hoje vou marcar a reunião e depois descansar um pouco.",
+    "en": "Today I'll schedule the meeting and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 296,
+    "pt": "Se tiver tempo, vou praticar português ainda hoje.",
+    "en": "If I have time, I'll practice Portuguese today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 297,
+    "pt": "Vale a pena fazer isto bem agora, ou esperamos um pouco?",
+    "en": "Is it worth doing this well now, or do we wait a bit?",
+    "focus": "vale a pena"
+  },
+  {
+    "id": 298,
+    "pt": "Hoje vou ver isso juntos e depois descansar um pouco.",
+    "en": "Today I'll look at that together and then rest a bit.",
+    "focus": "depois"
+  },
+  {
+    "id": 299,
+    "pt": "Se tiver tempo, vou comprar fruta ainda hoje.",
+    "en": "If I have time, I'll buy fruit today.",
+    "focus": "se tiver tempo"
+  },
+  {
+    "id": 300,
+    "pt": "Vale a pena guardar o ficheiro agora, ou esperamos um pouco?",
+    "en": "Is it worth saving the file now, or do we wait a bit?",
+    "focus": "vale a pena"
+  }
+]

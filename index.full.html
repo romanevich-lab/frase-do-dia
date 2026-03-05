@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frase do Dia</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">FD</div>
+      <div>
+        <div class="title">Frase do Dia</div>
+        <div class="subtitle" id="todayLabel">—</div>
+      </div>
+    </div>
+
+    <div class="topbar-actions">
+      <button class="btn" id="prevBtn" title="Dia anterior">◀</button>
+      <button class="btn" id="nextBtn" title="Dia seguinte">▶</button>
+      <button class="btn" id="copyBtn" title="Copiar frase">Copiar</button>
+      <button class="btn primary" id="toggleTranslationBtn">Mostrar tradução</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-head">
+        <div class="sidebar-title">Histórico</div>
+        <input id="searchInput" class="search" type="search" placeholder="Procurar…" />
+      </div>
+      <div id="historyList" class="history"></div>
+      <div class="sidebar-foot">
+        <div class="hint">
+          Dica: clica numa data para ver a frase desse dia.
+        </div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="card">
+        <div class="card-top">
+          <div class="chip" id="focusChip">—</div>
+          <div class="muted" id="counterLabel">—</div>
+        </div>
+
+        <div class="phrase-pt" id="phrasePt">A carregar…</div>
+        <div class="phrase-en" id="phraseEn" hidden>—</div>
+
+        <div class="divider"></div>
+
+        <div class="test">
+          <div class="test-title">Mini‑teste (memória)</div>
+          <div class="muted">Preenche o espaço em branco:</div>
+          <div class="cloze" id="clozeText">—</div>
+          <div class="test-row">
+            <input id="answerInput" class="answer" placeholder="Escreve a parte que falta…" />
+            <button class="btn" id="checkBtn">Verificar</button>
+          </div>
+          <div class="feedback" id="feedback"></div>
+        </div>
+      </div>
+
+      <div class="footer muted">
+        EP (pt‑PT). Sem registo por enquanto — guardamos preferências no teu browser.
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

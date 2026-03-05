@@ -21,27 +21,50 @@
 </head>
 <body>
 <div class="center">
-  <div class="pt" id="pt"></div>
+  <div class="pt" id="pt">A carregar…</div>
   <div class="en" id="en"></div>
 </div>
+
 <script>
-const phrases = [
-  { pt: "Bom dia! Como você está?",    en: "Good morning! How are you?" },
-  { pt: "Eu não entendo.",             en: "I don't understand." },
-  { pt: "Onde fica o banheiro?",       en: "Where is the bathroom?" },
-  { pt: "Quanto custa isso?",          en: "How much does this cost?" },
-  { pt: "Eu gosto de música.",         en: "I like music." },
-  { pt: "Você fala inglês?",           en: "Do you speak English?" },
-  { pt: "Por favor, me ajude.",        en: "Please help me." },
-  { pt: "Qual é o seu nome?",          en: "What is your name?" },
-  { pt: "Eu moro no Brasil.",          en: "I live in Brazil." },
-  { pt: "A comida está deliciosa.",    en: "The food is delicious." },
-];
-const START = new Date('2025-01-01');
-const day = Math.floor((new Date() - START) / 86400000) % phrases.length;
-const p = phrases[day];
-document.getElementById('pt').textContent = p.pt;
-document.getElementById('en').textContent = p.en;
+const TIME_ZONE = "Europe/Lisbon";
+const START_DATE = "2026-03-04"; // поменяй на дату старта ротации
+
+function lisbonDayNumber() {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: TIME_ZONE,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(new Date());
+
+  const y = Number(parts.find(p => p.type === "year").value);
+  const m = Number(parts.find(p => p.type === "month").value);
+  const d = Number(parts.find(p => p.type === "day").value);
+
+  return Math.floor(Date.UTC(y, m - 1, d) / 86400000);
+}
+
+function startDayNumber() {
+  const [y, m, d] = START_DATE.split("-").map(Number);
+  return Math.floor(Date.UTC(y, m - 1, d) / 86400000);
+}
+
+async function main() {
+  const res = await fetch("phrases.json", { cache: "no-store" });
+  if (!res.ok) throw new Error("phrases.json HTTP " + res.status);
+  const phrases = await res.json();
+
+  const idx = ((lisbonDayNumber() - startDayNumber()) % phrases.length + phrases.length) % phrases.length;
+  const p = phrases[idx];
+
+  document.getElementById('pt').textContent = p.pt || "";
+  document.getElementById('en').textContent = p.en || "";
+}
+
+main().catch(err => {
+  document.getElementById('pt').textContent = "Erro ao carregar frases.";
+  document.getElementById('en').textContent = String(err);
+});
 </script>
 </body>
 </html>
