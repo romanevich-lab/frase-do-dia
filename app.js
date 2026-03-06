@@ -1,22 +1,19 @@
 const TIME_ZONE = "Europe/Lisbon";
-const START_DATE = "2026-03-04"; // поменяй если нужно
-const GHOST_COUNT = 12;
+const START_DATE = "2026-03-04";
+
+const IS_MOBILE = window.matchMedia("(max-width: 768px)").matches;
+const GHOST_COUNT = IS_MOBILE ? 7 : 12;
 
 let PHRASES = [];
 let currentIndex = 0;
 
 function lisbonDayNumber() {
   const parts = new Intl.DateTimeFormat("en-CA", {
-    timeZone: TIME_ZONE,
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
+    timeZone: TIME_ZONE, year: "numeric", month: "2-digit", day: "2-digit",
   }).formatToParts(new Date());
-
   const y = Number(parts.find(p => p.type === "year").value);
   const m = Number(parts.find(p => p.type === "month").value);
   const d = Number(parts.find(p => p.type === "day").value);
-
   return Math.floor(Date.UTC(y, m - 1, d) / 86400000);
 }
 
@@ -35,14 +32,33 @@ function enableCloud(on) {
 function renderIndex(i) {
   if (!PHRASES.length) return;
   currentIndex = ((i % PHRASES.length) + PHRASES.length) % PHRASES.length;
-
   const p = PHRASES[currentIndex];
   document.getElementById("pt").textContent = p.pt || "";
   document.getElementById("en").textContent = p.en || "";
-
   if (document.getElementById("cloud")?.classList.contains("on")) {
     buildGhostCloud(PHRASES, currentIndex);
   }
+}
+
+function rectsOverlap(a, b) {
+  return !(a.right <= b.left || a.left >= b.right || a.bottom <= b.top || a.top >= b.bottom);
+}
+
+function getQuietRect() {
+  const w = window.innerWidth;
+  const h = window.innerHeight;
+
+  // approximate center of your text block (since we shift it up a bit on mobile)
+  const cx = w * 0.50;
+  const cy = h * (IS_MOBILE ? 0.47 : 0.45);
+
+  const qw = w * (IS_MOBILE ? 0.92 : 0.72);
+  const qh = h * (IS_MOBILE ? 0.36 : 0.28);
+
+  return {
+    left: cx - qw / 2, right: cx + qw / 2,
+    top: cy - qh / 2, bottom: cy + qh / 2,
+  };
 }
 
 function buildGhostCloud(phrases, centerIdx) {
@@ -50,12 +66,18 @@ function buildGhostCloud(phrases, centerIdx) {
   if (!cloud) return;
   cloud.innerHTML = "";
 
-  const spots = [
-    { x: 12, y: 18 }, { x: 50, y: 10 }, { x: 82, y: 20 },
-    { x: 10, y: 42 }, { x: 86, y: 44 },
-    { x: 18, y: 72 }, { x: 52, y: 82 }, { x: 84, y: 76 },
-    { x: 30, y: 30 }, { x: 70, y: 32 },
-    { x: 28, y: 60 }, { x: 72, y: 62 },
+  const quiet = getQuietRect();
+  const w = window.innerWidth;
+  const h = window.innerHeight;
+  const placed = [];
+
+  // Mobile: fixed “edge spots” so it never becomes messy.
+  const edgeSpotsMobile = [
+    { x01: 0.08, y01: 0.18 }, { x01: 0.92, y01: 0.18 },
+    { x01: 0.08, y01: 0.34 }, { x01: 0.92, y01: 0.34 },
+    { x01: 0.08, y01: 0.68 }, { x01: 0.92, y01: 0.68 },
+    { x01: 0.08, y01: 0.82 }, { x01: 0.92, y01: 0.82 },
+    { x01: 0.50, y01: 0.12 }, { x01: 0.50, y01: 0.88 },
   ];
 
   for (let k = 1; k <= GHOST_COUNT; k++) {
@@ -63,43 +85,84 @@ function buildGhostCloud(phrases, centerIdx) {
     const pt = phrases[idx].pt || "";
 
     const el = document.createElement("div");
-    el.className = "ghost " + (k > 8 ? "tiny" : k > 4 ? "small" : "");
+    el.className = "ghost " + (k > 5 ? "tiny" : k > 2 ? "small" : "");
     el.textContent = pt;
+    el.style.opacity = "0";
+    cloud.appendChild(el);
 
-    const spot = spots[(k - 1) % spots.length];
-    el.style.left = spot.x + "%";
-    el.style.top  = spot.y + "%";
+    let ok = false;
 
-    const dx = (Math.random() * 18 - 9).toFixed(1);
-    const dy = (Math.random() * 14 - 7).toFixed(1);
-    const dur = (18 + Math.random() * 16).toFixed(1);
+    for (let tries = 0; tries < 80; tries++) {
+      let x01, y01;
 
-    el.animate(
-      [
-        { transform: `translate(0px, 0px)` },
-        { transform: `translate(${dx}px, ${dy}px)` },
-        { transform: `translate(0px, 0px)` },
-      ],
-      { duration: dur * 1000, iterations: Infinity, easing: "ease-in-out" }
-    );
+      if (IS_MOBILE) {
+        const s = edgeSpotsMobile[(k - 1 + tries) % edgeSpotsMobile.length];
+        x01 = s.x01 + (Math.random() * 0.02 - 0.01); // tiny jitter
+        y01 = s.y01 + (Math.random() * 0.02 - 0.01);
+      } else {
+        const a = Math.random() * Math.PI * 2;
+        const r = 0.30 + Math.random() * 0.25;
+        x01 = 0.5 + Math.cos(a) * r;
+        y01 = 0.5 + Math.sin(a) * r * 0.75;
+      }
+
+      x01 = Math.min(0.94, Math.max(0.06, x01));
+      y01 = Math.min(0.92, Math.max(0.08, y01));
+
+      el.style.left = (x01 * 100).toFixed(2) + "%";
+      el.style.top  = (y01 * 100).toFixed(2) + "%";
+
+      const r = el.getBoundingClientRect();
+
+      if (rectsOverlap(r, quiet)) continue;
+      if (r.left < 8 || r.right > w - 8 || r.top < 8 || r.bottom > h - 8) continue;
+
+      let overlap = false;
+      for (const pr of placed) { if (rectsOverlap(r, pr)) { overlap = true; break; } }
+      if (overlap) continue;
+
+      placed.push({ left: r.left, top: r.top, right: r.right, bottom: r.bottom });
+      ok = true;
+      break;
+    }
+
+    if (!ok) {
+      el.style.left = "8%";
+      el.style.top = (k * 10) + "%";
+    }
+
+    // gentle drift (desktop mostly; on mobile keep it minimal)
+    const dx = (IS_MOBILE ? (Math.random()*8-4) : (Math.random()*18-9)).toFixed(1);
+    const dy = (IS_MOBILE ? (Math.random()*6-3) : (Math.random()*14-7)).toFixed(1);
+    const dur = (IS_MOBILE ? (22 + Math.random()*10) : (18 + Math.random()*16)).toFixed(1);
+
+    if (el.animate) {
+      el.animate(
+        [
+          { transform: `translate(0px,0px)` },
+          { transform: `translate(${dx}px,${dy}px)` },
+          { transform: `translate(0px,0px)` },
+        ],
+        { duration: dur * 1000, iterations: Infinity, easing: "ease-in-out" }
+      );
+    }
+
+    el.style.opacity = "1";
 
     el.addEventListener("click", (e) => {
       e.stopPropagation();
       renderIndex(idx);
     });
-
-    cloud.appendChild(el);
   }
 }
 
-/* --- Auth UI --- */
+/* Auth UI */
 function showUser(u) {
   document.getElementById("signin").style.display = "none";
   const user = document.getElementById("user");
   user.style.display = "flex";
   document.getElementById("name").textContent = u.name || u.email || "User";
   document.getElementById("avatar").src = u.picture || "";
-
   enableCloud(true);
   if (PHRASES.length) buildGhostCloud(PHRASES, currentIndex);
 }
@@ -132,7 +195,13 @@ document.getElementById("logout").addEventListener("click", async () => {
   showSignin();
 });
 
-/* --- Boot --- */
+window.addEventListener("resize", () => {
+  if (document.getElementById("cloud")?.classList.contains("on") && PHRASES.length) {
+    buildGhostCloud(PHRASES, currentIndex);
+  }
+});
+
+/* Boot */
 (async () => {
   const res = await fetch("phrases.json", { cache: "no-store" });
   PHRASES = await res.json();
@@ -140,7 +209,6 @@ document.getElementById("logout").addEventListener("click", async () => {
   const idx = ((lisbonDayNumber() - startDayNumber()) % PHRASES.length + PHRASES.length) % PHRASES.length;
   renderIndex(idx);
 
-  // only after phrases are loaded, check session
   refreshMe();
 })().catch(e => {
   document.getElementById("pt").textContent = "Erro ao carregar frases.";

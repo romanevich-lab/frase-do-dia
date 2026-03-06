@@ -14,40 +14,25 @@ body {
   padding: 20px;
   position: relative;
   z-index: 2;
-
-  /* поднять центральную фразу примерно на 10% */
   transform: translateY(-10vh);
 }
 
-/* ОВАЛЬНАЯ МАСКА: гарантирует чистую область вокруг текста */
+/* clean reading area */
 .center::before {
   content: "";
   position: absolute;
   left: 50%;
   top: 50%;
-
-  /* Размеры маски (desktop) */
   width: 72vw;
   height: 28vh;
-
   transform: translate(-50%, -50%);
   background: #fff;
   border-radius: 999px;
-
-  /* под текстом, но над "облаком" */
   z-index: -1;
 }
 
-.pt {
-  font-size: 2.2rem;
-  color: #111;
-  margin-bottom: 20px;
-}
-
-.en {
-  font-size: 1.2rem;
-  color: #888;
-}
+.pt { font-size: 2.2rem; color: #111; margin-bottom: 20px; }
+.en { font-size: 1.2rem; color: #888; }
 
 /* auth */
 .auth {
@@ -79,7 +64,7 @@ body {
   cursor: pointer;
 }
 
-/* floating phrases (visible only after login) */
+/* floating phrases */
 .cloud {
   position: fixed;
   inset: 0;
@@ -95,10 +80,9 @@ body {
   position: absolute;
   max-width: 320px;
   font-family: Georgia, serif;
-  color: rgba(0,0,0,0.22);
-  line-height: 1.15;
-  font-size: 1.05rem;
-  filter: blur(0.2px);
+  color: rgba(0,0,0,0.18);
+  line-height: 1.12;
+  font-size: 0.98rem;
   user-select: none;
   white-space: normal;
 
@@ -106,20 +90,23 @@ body {
   cursor: pointer;
 }
 
-.ghost:hover { color: rgba(0,0,0,0.32); }
-
-.ghost.small { font-size: 0.95rem; color: rgba(0,0,0,0.16); }
-.ghost.tiny  { font-size: 0.85rem; color: rgba(0,0,0,0.12); }
+.ghost:hover { color: rgba(0,0,0,0.26); }
+.ghost.small { font-size: 0.90rem; color: rgba(0,0,0,0.14); }
+.ghost.tiny  { font-size: 0.82rem; color: rgba(0,0,0,0.11); }
 
 @media (max-width: 768px) {
-  /* на мобиле чуть меньше сдвиг */
-  .center { transform: translateY(-7vh); }
+  /* центр на мобиле — чуть-чуть вверх, не сильно */
+  .center { transform: translateY(-5vh); }
 
-  /* маска под мобилу: шире, но ниже */
-  .center::before {
-    width: 92vw;
-    height: 24vh;
-  }
+  /* маска на мобиле — больше, чтобы точно чисто */
+  .center::before { width: 96vw; height: 34vh; }
 
-  .ghost { max-width: 220px; font-size: 0.95rem; }
+  /* центральный текст под мобилу */
+  .pt { font-size: 1.85rem; }
+  .en { font-size: 1.05rem; }
+
+  /* призраки меньше и слабее */
+  .ghost { max-width: 180px; font-size: 0.88rem; color: rgba(0,0,0,0.13); }
+  .ghost.small { font-size: 0.82rem; color: rgba(0,0,0,0.10); }
+  .ghost.tiny  { font-size: 0.78rem; color: rgba(0,0,0,0.09); }
 }
