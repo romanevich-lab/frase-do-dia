@@ -1,4 +1,16 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #111;
+  --muted: #888;
+  --soft: rgba(0, 0, 0, 0.18);
+  --mid: rgba(0, 0, 0, 0.34);
+  --near: rgba(0, 0, 0, 0.56);
+}
 
 body {
   min-height: 100vh;
@@ -10,11 +22,15 @@ body {
 }
 
 .center {
+  width: min(1120px, calc(100vw - 32px));
   text-align: center;
   padding: 20px;
   position: relative;
   z-index: 2;
-  transform: translateY(-10vh);
+  transform: translateY(-6vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* clean reading area */
@@ -22,17 +38,29 @@ body {
   content: "";
   position: absolute;
   left: 50%;
-  top: 50%;
-  width: 72vw;
-  height: 28vh;
+  top: 58%;
+  width: min(78vw, 980px);
+  height: clamp(180px, 30vh, 320px);
   transform: translate(-50%, -50%);
   background: #fff;
   border-radius: 999px;
   z-index: -1;
 }
 
-.pt { font-size: 2.2rem; color: #111; margin-bottom: 20px; }
-.en { font-size: 1.2rem; color: #888; }
+.pt {
+  font-size: clamp(2.4rem, 5.4vw, 4.9rem);
+  line-height: 1.12;
+  color: var(--text);
+  margin-bottom: 18px;
+  max-width: 1100px;
+}
+
+.en {
+  font-size: clamp(1.1rem, 2vw, 1.8rem);
+  line-height: 1.35;
+  color: var(--muted);
+  max-width: 900px;
+}
 
 /* auth */
 .auth {
@@ -54,7 +82,11 @@ body {
   color: #444;
 }
 
-.user img { width: 26px; height: 26px; border-radius: 50%; }
+.user img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
 
 .user button {
   border: 1px solid #ddd;
@@ -64,49 +96,100 @@ body {
   cursor: pointer;
 }
 
-/* floating phrases */
+/* stacked previous phrases */
 .cloud {
-  position: fixed;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
   display: none;
-  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 180px;
+  margin-bottom: 18px;
+  pointer-events: auto;
 }
 
-.cloud.on { display: block; }
+.cloud.on {
+  display: flex;
+}
 
 .ghost {
-  position: absolute;
-  max-width: 320px;
-  font-family: Georgia, serif;
-  color: rgba(0,0,0,0.18);
-  line-height: 1.12;
-  font-size: 0.98rem;
+  position: relative;
+  display: block;
+  max-width: min(94vw, 1050px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   user-select: none;
-  white-space: normal;
-
-  pointer-events: auto;
   cursor: pointer;
+  transition: color 0.18s ease, transform 0.18s ease, opacity 0.18s ease;
 }
 
-.ghost:hover { color: rgba(0,0,0,0.26); }
-.ghost.small { font-size: 0.90rem; color: rgba(0,0,0,0.14); }
-.ghost.tiny  { font-size: 0.82rem; color: rgba(0,0,0,0.11); }
+.ghost:hover {
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.ghost.level-3 {
+  font-size: clamp(1.15rem, 2.2vw, 1.9rem);
+  line-height: 1.15;
+  color: var(--soft);
+  transform: scale(0.84);
+  margin-bottom: 8px;
+}
+
+.ghost.level-2 {
+  font-size: clamp(1.45rem, 3vw, 2.7rem);
+  line-height: 1.14;
+  color: var(--mid);
+  transform: scale(0.90);
+  margin-bottom: 8px;
+}
+
+.ghost.level-1 {
+  font-size: clamp(1.95rem, 4.2vw, 3.8rem);
+  line-height: 1.12;
+  color: var(--near);
+  transform: scale(0.96);
+  margin-bottom: 12px;
+}
 
 @media (max-width: 768px) {
-  /* центр на мобиле — чуть-чуть вверх, не сильно */
-  .center { transform: translateY(-5vh); }
+  .center {
+    transform: translateY(-4vh);
+    padding: 16px;
+  }
 
-  /* маска на мобиле — больше, чтобы точно чисто */
-  .center::before { width: 96vw; height: 34vh; }
+  .center::before {
+    width: 96vw;
+    height: clamp(170px, 34vh, 250px);
+    top: 60%;
+  }
 
-  /* центральный текст под мобилу */
-  .pt { font-size: 1.85rem; }
-  .en { font-size: 1.05rem; }
+  .cloud {
+    min-height: 120px;
+    margin-bottom: 12px;
+  }
 
-  /* призраки меньше и слабее */
-  .ghost { max-width: 180px; font-size: 0.88rem; color: rgba(0,0,0,0.13); }
-  .ghost.small { font-size: 0.82rem; color: rgba(0,0,0,0.10); }
-  .ghost.tiny  { font-size: 0.78rem; color: rgba(0,0,0,0.09); }
+  .pt {
+    font-size: clamp(1.9rem, 8vw, 3rem);
+    margin-bottom: 14px;
+  }
+
+  .en {
+    font-size: 1rem;
+  }
+
+  .ghost.level-3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .ghost.level-2 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+  }
+
+  .ghost.level-1 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
 }
