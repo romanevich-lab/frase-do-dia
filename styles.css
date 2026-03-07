@@ -48,7 +48,7 @@ body {
 }
 
 .pt {
-  font-size: clamp(1.95rem, 4.35vw, 3.85rem);
+  font-size: clamp(0.975rem, 2.175vw, 1.925rem);
   line-height: 1.12;
   color: var(--text);
   margin-bottom: 16px;
@@ -56,7 +56,7 @@ body {
 }
 
 .en {
-  font-size: clamp(1rem, 1.65vw, 1.45rem);
+  font-size: clamp(0.5rem, 0.825vw, 0.725rem);
   line-height: 1.35;
   color: var(--muted);
   max-width: 760px;
@@ -78,7 +78,7 @@ body {
   align-items: center;
   gap: 10px;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 7px;
   color: #444;
 }
 
@@ -129,7 +129,7 @@ body {
 }
 
 .ghost.level-3 {
-  font-size: clamp(0.95rem, 1.55vw, 1.35rem);
+  font-size: clamp(0.475rem, 0.775vw, 0.675rem);
   line-height: 1.14;
   color: var(--soft);
   transform: scale(0.84);
@@ -137,7 +137,7 @@ body {
 }
 
 .ghost.level-2 {
-  font-size: clamp(1.15rem, 2vw, 1.8rem);
+  font-size: clamp(0.575rem, 1vw, 0.9rem);
   line-height: 1.14;
   color: var(--mid);
   transform: scale(0.90);
@@ -145,7 +145,7 @@ body {
 }
 
 .ghost.level-1 {
-  font-size: clamp(1.45rem, 2.9vw, 2.55rem);
+  font-size: clamp(0.725rem, 1.45vw, 1.275rem);
   line-height: 1.12;
   color: var(--near);
   transform: scale(0.96);
@@ -170,26 +170,26 @@ body {
   }
 
   .pt {
-    font-size: clamp(1.65rem, 6.8vw, 2.55rem);
+    font-size: clamp(0.825rem, 3.4vw, 1.275rem);
     margin-bottom: 12px;
   }
 
   .en {
-    font-size: 0.95rem;
+    font-size: 0.475rem;
   }
 
   .ghost.level-3 {
-    font-size: 0.8rem;
+    font-size: 0.4rem;
     margin-bottom: 4px;
   }
 
   .ghost.level-2 {
-    font-size: 1rem;
+    font-size: 0.5rem;
     margin-bottom: 4px;
   }
 
   .ghost.level-1 {
-    font-size: 1.28rem;
+    font-size: 0.64rem;
     margin-bottom: 7px;
   }
 }
