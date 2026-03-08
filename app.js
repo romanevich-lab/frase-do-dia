@@ -1,9 +1,11 @@
 const TIME_ZONE = "Europe/Lisbon";
 const START_DATE = "2026-03-04";
 const PREVIOUS_COUNT = 3;
+const ROTATION_DURATION = 320;
 
 let PHRASES = [];
 let currentIndex = 0;
+let isRotating = false;
 
 function lisbonDayNumber() {
   const parts = new Intl.DateTimeFormat("en-CA", {
@@ -68,7 +70,7 @@ function buildGhostCloud(centerIdx) {
 
     el.addEventListener("click", (e) => {
       e.stopPropagation();
-      renderIndex(item.idx);
+      rotateToIndex(item.idx);
     });
 
     cloud.appendChild(el);
@@ -87,6 +89,37 @@ function renderIndex(i) {
   if (document.getElementById("cloud")?.classList.contains("on")) {
     buildGhostCloud(currentIndex);
   }
+}
+
+function rotateToIndex(targetIdx) {
+  if (!PHRASES.length || isRotating) return;
+
+  const normalizedTarget =
+    ((targetIdx % PHRASES.length) + PHRASES.length) % PHRASES.length;
+
+  if (normalizedTarget === currentIndex) return;
+
+  const center = document.querySelector(".center");
+  if (!center) {
+    renderIndex(normalizedTarget);
+    return;
+  }
+
+  isRotating = true;
+  center.classList.remove("is-rotating-in");
+  center.classList.add("is-rotating-out");
+
+  window.setTimeout(() => {
+    renderIndex(normalizedTarget);
+
+    center.classList.remove("is-rotating-out");
+    center.classList.add("is-rotating-in");
+
+    window.setTimeout(() => {
+      center.classList.remove("is-rotating-in");
+      isRotating = false;
+    }, ROTATION_DURATION);
+  }, ROTATION_DURATION);
 }
 
 /* Auth UI */
@@ -147,7 +180,11 @@ document.getElementById("logout").addEventListener("click", async () => {
 });
 
 window.addEventListener("resize", () => {
-  if (document.getElementById("cloud")?.classList.contains("on") && PHRASES.length) {
+  if (
+    !isRotating &&
+    document.getElementById("cloud")?.classList.contains("on") &&
+    PHRASES.length
+  ) {
     buildGhostCloud(currentIndex);
   }
 });

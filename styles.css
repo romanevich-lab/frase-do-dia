@@ -27,7 +27,7 @@ body {
   padding: 20px;
   position: relative;
   z-index: 2;
-  transform: translateY(-6vh);
+  transform: translateY(-20vh);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,8 +103,10 @@ body {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
+  height: 130px;
   min-height: 130px;
-  margin-bottom: 28px;
+  overflow: hidden;
+  margin-bottom: 56px;
   pointer-events: auto;
 }
 
@@ -152,9 +154,72 @@ body {
   margin-bottom: 10px;
 }
 
+/* rotation effect */
+.center.is-rotating-out .cloud {
+  animation: stackOut 320ms ease both;
+}
+
+.center.is-rotating-out .pt,
+.center.is-rotating-out .en {
+  animation: mainOut 320ms ease both;
+}
+
+.center.is-rotating-in .cloud {
+  animation: stackIn 320ms ease both;
+}
+
+.center.is-rotating-in .pt,
+.center.is-rotating-in .en {
+  animation: mainIn 320ms ease both;
+}
+
+@keyframes stackOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(22px) scale(0.96);
+  }
+}
+
+@keyframes stackIn {
+  from {
+    opacity: 0;
+    transform: translateY(-22px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes mainOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(34px) scale(0.95);
+  }
+}
+
+@keyframes mainIn {
+  from {
+    opacity: 0;
+    transform: translateY(-34px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 @media (max-width: 768px) {
   .center {
-    transform: translateY(-4vh);
+    transform: translateY(-14vh);
     padding: 16px;
   }
 
@@ -165,8 +230,9 @@ body {
   }
 
   .cloud {
+    height: 92px;
     min-height: 92px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .pt {
