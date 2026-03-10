@@ -65,7 +65,6 @@ function buildGhostCloud(centerIdx) {
 
     el.className = `ghost level-${level}`;
     el.textContent = item.phrase.pt || "";
-    el.title = item.phrase.pt || "";
 
     el.addEventListener("click", (e) => {
       e.stopPropagation();

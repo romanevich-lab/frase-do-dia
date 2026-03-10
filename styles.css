@@ -55,10 +55,7 @@ body {
   color: var(--text);
   margin-bottom: 16px;
   max-width: 980px;
-  min-height: 2.3em;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  min-height: 2.24em; /* reserve space for 2 lines */
 }
 
 .en {
@@ -66,10 +63,7 @@ body {
   line-height: 1.35;
   color: var(--muted);
   max-width: 760px;
-  min-height: 1.35em;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  min-height: 2.7em; /* reserve space for 2 lines */
 }
 
 /* auth */
@@ -239,12 +233,12 @@ body {
   .pt {
     font-size: clamp(1.07rem, 4.42vw, 1.66rem);
     margin-bottom: 12px;
-    min-height: 2.35em;
+    min-height: 2.24em;
   }
 
   .en {
     font-size: 0.71rem;
-    min-height: 1.35em;
+    min-height: 2.7em;
   }
 
   .ghost.level-4 {
