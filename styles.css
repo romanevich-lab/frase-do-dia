@@ -7,7 +7,8 @@
 :root {
   --text: #111;
   --muted: #888;
-  --soft: rgba(0, 0, 0, 0.18);
+  --soft: rgba(0, 0, 0, 0.14);
+  --soft2: rgba(0, 0, 0, 0.2);
   --mid: rgba(0, 0, 0, 0.34);
   --near: rgba(0, 0, 0, 0.56);
 }
@@ -31,6 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  view-transition-name: phrase-stage;
 }
 
 /* clean reading area */
@@ -103,8 +105,8 @@ body {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  height: 130px;
-  min-height: 130px;
+  height: 168px;
+  min-height: 168px;
   overflow: hidden;
   margin-bottom: 56px;
   pointer-events: auto;
@@ -130,10 +132,18 @@ body {
   color: rgba(0, 0, 0, 0.74);
 }
 
+.ghost.level-4 {
+  font-size: clamp(0.46rem, 0.74vw, 0.64rem);
+  line-height: 1.12;
+  color: var(--soft);
+  transform: scale(0.8);
+  margin-bottom: 4px;
+}
+
 .ghost.level-3 {
   font-size: clamp(0.62rem, 1.01vw, 0.88rem);
   line-height: 1.14;
-  color: var(--soft);
+  color: var(--soft2);
   transform: scale(0.84);
   margin-bottom: 6px;
 }
@@ -142,7 +152,7 @@ body {
   font-size: clamp(0.75rem, 1.3vw, 1.17rem);
   line-height: 1.14;
   color: var(--mid);
-  transform: scale(0.90);
+  transform: scale(0.9);
   margin-bottom: 6px;
 }
 
@@ -154,62 +164,44 @@ body {
   margin-bottom: 10px;
 }
 
-/* rotation effect */
-.center.is-rotating-out .cloud {
-  animation: stackOut 320ms ease both;
+/* smooth stage transition */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
 }
 
-.center.is-rotating-out .pt,
-.center.is-rotating-out .en {
-  animation: mainOut 320ms ease both;
+::view-transition-old(phrase-stage),
+::view-transition-new(phrase-stage) {
+  mix-blend-mode: normal;
+  animation-duration: 420ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  animation-fill-mode: both;
 }
 
-.center.is-rotating-in .cloud {
-  animation: stackIn 320ms ease both;
+::view-transition-old(phrase-stage) {
+  animation-name: phraseStageOld;
 }
 
-.center.is-rotating-in .pt,
-.center.is-rotating-in .en {
-  animation: mainIn 320ms ease both;
+::view-transition-new(phrase-stage) {
+  animation-name: phraseStageNew;
 }
 
-@keyframes stackOut {
+@keyframes phraseStageOld {
   from {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
   to {
     opacity: 0;
-    transform: translateY(22px) scale(0.96);
+    transform: translateY(22px) scale(0.985);
   }
 }
 
-@keyframes stackIn {
+@keyframes phraseStageNew {
   from {
     opacity: 0;
-    transform: translateY(-22px) scale(0.96);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes mainOut {
-  from {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(34px) scale(0.95);
-  }
-}
-
-@keyframes mainIn {
-  from {
-    opacity: 0;
-    transform: translateY(-34px) scale(0.95);
+    transform: translateY(-22px) scale(0.972);
   }
   to {
     opacity: 1;
@@ -230,8 +222,8 @@ body {
   }
 
   .cloud {
-    height: 92px;
-    min-height: 92px;
+    height: 118px;
+    min-height: 118px;
     margin-bottom: 40px;
   }
 
@@ -242,6 +234,11 @@ body {
 
   .en {
     font-size: 0.71rem;
+  }
+
+  .ghost.level-4 {
+    font-size: 0.38rem;
+    margin-bottom: 3px;
   }
 
   .ghost.level-3 {

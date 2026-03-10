@@ -1,7 +1,6 @@
 const TIME_ZONE = "Europe/Lisbon";
 const START_DATE = "2026-03-04";
-const PREVIOUS_COUNT = 3;
-const ROTATION_DURATION = 320;
+const PREVIOUS_COUNT = 4;
 
 let PHRASES = [];
 let currentIndex = 0;
@@ -61,7 +60,7 @@ function buildGhostCloud(centerIdx) {
   const previous = getPreviousItems(centerIdx);
 
   previous.forEach((item, position) => {
-    const level = previous.length - position; // 3, 2, 1
+    const level = previous.length - position; // 4, 3, 2, 1
     const el = document.createElement("div");
 
     el.className = `ghost level-${level}`;
@@ -99,27 +98,23 @@ function rotateToIndex(targetIdx) {
 
   if (normalizedTarget === currentIndex) return;
 
-  const center = document.querySelector(".center");
-  if (!center) {
-    renderIndex(normalizedTarget);
+  isRotating = true;
+
+  const finish = () => {
+    isRotating = false;
+  };
+
+  if (document.startViewTransition) {
+    const transition = document.startViewTransition(() => {
+      renderIndex(normalizedTarget);
+    });
+
+    transition.finished.finally(finish);
     return;
   }
 
-  isRotating = true;
-  center.classList.remove("is-rotating-in");
-  center.classList.add("is-rotating-out");
-
-  window.setTimeout(() => {
-    renderIndex(normalizedTarget);
-
-    center.classList.remove("is-rotating-out");
-    center.classList.add("is-rotating-in");
-
-    window.setTimeout(() => {
-      center.classList.remove("is-rotating-in");
-      isRotating = false;
-    }, ROTATION_DURATION);
-  }, ROTATION_DURATION);
+  renderIndex(normalizedTarget);
+  finish();
 }
 
 /* Auth UI */
